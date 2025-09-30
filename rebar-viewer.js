@@ -1,13 +1,16 @@
 export function init($widget) {
-  const el = document.createElement("div");
-  el.style.width = "100%";
-  el.style.height = "100%";
-  el.style.backgroundColor = "red";
-  el.style.color = "white";
-  el.style.fontSize = "28px";
-  el.style.display = "flex";
-  el.style.alignItems = "center";
-  el.style.justifyContent = "center";
-  el.innerText = "✅ Custom Element funktioniert!";
-  $widget.appendChild(el);
+  console.log("✅ Wix init läuft!");
+  
+  const box = document.createElement("div");
+  box.style.width = "100%";
+  box.style.height = "100%";
+  box.style.backgroundColor = "red";
+  box.style.display = "flex";
+  box.style.alignItems = "center";
+  box.style.justifyContent = "center";
+  box.style.color = "white";
+  box.style.fontSize = "24px";
+  box.innerText = "Hallo aus GitHub Pages!";
+  
+  $widget.appendChild(box);
 }
