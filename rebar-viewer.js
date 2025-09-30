@@ -1,5 +1,8 @@
-const testDiv = document.createElement("div");
-testDiv.style.color = "white";
-testDiv.style.fontSize = "32px";
-testDiv.innerText = "✅ Script loaded from GitHub Pages!";
-$widget.appendChild(testDiv);
+// Dieser Code läuft in Wix Custom Elements Sandbox
+export function init($widget) {
+  const div = document.createElement("div");
+  div.style.color = "white";
+  div.style.fontSize = "28px";
+  div.innerText = "✅ Hallo von GitHub Pages!";
+  $widget.appendChild(div);
+}
